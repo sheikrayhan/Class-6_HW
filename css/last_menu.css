@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 5px red,
+                 6px 6px 5px green;
+}
+
+                /* Main Menu CSS */
+nav{
+    background-color: blue;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    display: inline-block;
+    background-color: rgb(32, 141, 90);
+    color: white;
+    padding: 10px 15px;
+    transition: 1s;
+}
+
+nav ul li a:hover{
+    background-color: red;
+}
+
+/* Sub Menu CSS */
+nav ul li ul{
+    position: absolute;
+    left: 5px;
+    top: 140%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+
+
+}
+
+nav ul li ul li{
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+nav ul li ul li a{
+    background-color: rgb(55, 201, 152);
+    color: black;
+}

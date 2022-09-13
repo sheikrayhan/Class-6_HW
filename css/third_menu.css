@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#d345{
+    background-color: rgba(19, 36, 71, 0.692);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 5px red, 
+                 6px 6px 5px rgb(113, 32, 218);
+}
+
+p{
+    text-align: center;
+    background-image: url(https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg);
+}
+
+/* main menu css */
+
+nav{
+    background-color: black;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    /* margin: 10px; */
+    background-color: rgb(95, 42, 165);
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 1s;
+} 
+
+nav ul li a:hover{
+    background-color: black;
+
+}
+
+/* sub menu css  */
+
+nav ul li ul{
+    position: absolute;
+    left: 10px;
+    top: 130%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+nav ul li:hover ul{
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+
+nav ul li ul li{
+    display: block;
+    border-bottom: 1px solid rgb(8, 20, 8);
+    border-radius: 5px;
+}
+
+nav ul li ul li a{
+    background-color: rgb(85, 63, 207);
+}
+

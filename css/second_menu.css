@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#ddm{
+    background-color: rgb(97, 189, 181);
+    color: rgb(35, 49, 88);
+    text-align: center;
+    text-shadow: 3px 3px 5px greenyellow, 
+                 6px 6px 5px blueviolet, 
+                 9px 9px 5px rgb(35, 49, 88);
+}
+
+ /* manin menu css */
+nav{
+    background-color: rgb(36, 154, 201);
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: white;
+    background-color: red;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: .6s;
+}
+
+nav ul li a:hover{
+    background-color: black;
+}
+
+/* sub menu css */
+
+nav ul li ul{
+    position: absolute;
+    left: 10px;
+    top: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+nav ul li ul li{
+    display: block;
+    border-bottom: 1px solid rgb(8, 5, 5);
+    border-right: 1px solid red;
+    border-left: 1px solid rgb(163, 20, 163);
+    border-radius: 5px;
+}
+nav ul li ul li a{
+    background-color: rgb(102, 167, 175);
+}
+
